@@ -1,0 +1,205 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333;
+    }
+
+img {
+    display: block;
+}
+
+/* ハンバーガーメニュー */
+.gnav-checkbox {
+    display: none;
+}
+.gnav-toggle {
+    display: flex;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+.gnav-toggle span,
+.gnav-toggle span::before,
+.gnav-toggle span::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background-color: #ccc;
+}
+.gnav-toggle span::after {
+    top: calc(50% + 14px);
+}
+.gnav-toggle span::before {
+    top: calc(50% - 14px);
+}
+/* ハンバーガーメニュー開閉 */
+.gnav-checkbox:checked ~ .gnav-toggle span {
+    background-color: #333;
+    transform: scaleX(1);
+}
+.gnav-checkbox:checked ~ .gnav-toggle span::after {
+    background-color: #333;
+    top: 0;
+    transform: rotate(45deg);
+}
+.gnav-checkbox:checked ~ .gnav-toggle span::before{
+    background-color: #333;
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/* ナビゲーション */
+.gnav-content {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+    transform: translateX(105%);
+}
+.gnav-checkbox:checked ~ .gnav-content {
+    transform: translateX(0%);
+}
+.gnav-content-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.gnav-content-list li {
+    display: block;
+    margin-bottom: 2rem;
+}
+.gnav-content-list a {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #333;
+}
+.gnav-content-list a::after {
+    content: '';
+    background-color: #000;
+}
+
+/* メインビュー */
+.main-view_bg {
+    height: 80vh;
+    width: 100%;
+    border-bottom-left-radius: 50% 20px;
+    border-bottom-right-radius: 50% 20px;
+    overflow: hidden;
+}
+.main-view_bg-img01 {
+    height: 80vh;
+    width: auto;
+    background: url(../img/bg_img01.jpg);
+}
+.main-view_text {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 10px;
+}
+.main-view_text p {
+    display: flex;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    justify-content: center;
+}
+
+/* イントロダクション */
+.about {
+    margin: 100px 24px 40px;
+}
+.about-text {
+    min-width: 400px;
+}
+.about-text h2 {
+    font-weight: normal;
+    line-height: 2;
+    margin-bottom: 48px;
+}
+.about-text p {
+    line-height: 2;
+}
+.about-img img {
+    width: 50%;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* セクションタイトル (共通設定)*/
+.title {
+    height: 40px;
+    width: 250px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.title h2 {
+    font-weight: normal;
+}
+
+/* おしらせ */
+.news {
+    margin: 100px 24px 50px;
+}
+.news-list {
+    padding-bottom: 50px;
+}
+.news-list-item {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+.news-list-item img {
+    width: 100%;
+}
+.news-list-item p{
+    text-align: center;
+    background-color: #333;
+}
+.news-foot img {
+    width: 50%;
+}
+
+/* 今月のお花教室 */
+.season {
+    margin: 100px 24px 50px;
+}
+
+/* バックグラウンドイメージ */
+.bg-img {
+    height: 55vh;
+    clip-path: inset(0);
+}
+.bg-img img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.season-flower img {
+    width: 100%;
+}
