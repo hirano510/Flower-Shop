@@ -40,7 +40,7 @@
             </h1>
         </div>
         <div class="scroll">
-            <p>scroll</p>
+            <p>Scroll</p>
         </div>
     </header>
     <main>
@@ -70,19 +70,21 @@
             <div class="news-list">
                 <div class="title">
                     <h2>お知らせ</h2>
-                </div> 
-                <a href="#" class="news-list-item">
-                    <img src="img/news01.jpg" alt="">
-                    <p>お花教室のご案内</p>
-                </a>
-                <a href="#" class="news-list-item">
-                    <img src="img/news02.jpg" alt="">
-                    <p>6月のキャンペーン</p>
-                </a>
-                <a href="#" class="news-list-item">
-                    <img src="img/news03.jpg" alt="">
-                    <p>営業時間について</p>
-                </a>
+                </div>
+                <div class="pc-list-items">
+                    <a href="#" class="news-list-item">
+                        <img src="img/news01.jpg" alt="">
+                        <p>お花教室のご案内</p>
+                    </a>
+                    <a href="#" class="news-list-item">
+                        <img src="img/news02.jpg" alt="">
+                        <p>6月のキャンペーン</p>
+                    </a>
+                    <a href="#" class="news-list-item">
+                        <img src="img/news03.jpg" alt="">
+                        <p>営業時間について</p>
+                    </a>
+                </div>
             </div>
             <div class="news-foot">
                 <img src="img/hana_bottom.png" alt="">
@@ -95,26 +97,28 @@
             <div class="title">
                 <h2>今月のお花教室</h2>
             </div>
-            <div class="season-flower">
-                <img src="img/school.jpg" alt="">
-                <div class="season-flower-text">
-                    <p>6月は「あじさいを使ったブーケ」を作ります。</p>
-                    <p>当店では毎月、季節に合った草花を使って小物などを作るお花の教室を行っています。
-                        色々な告知や、教室の雰囲気、イベントレポートなどは随時ブログにて！
-                        ぜひ、お店に遊びに来てくださいね。</p>
-                        <span class="season-flower-button">
-                            <p>お店のブログはこちら</p>
-                        </span>
+            <div class="pc-season">
+                <div class="season-flower">
+                    <img src="img/school.jpg" alt="">
+                    <dl class="season-flower-text">
+                        <dt>6月は「あじさいを使ったブーケ」を作ります。</dt>
+                        <dd>当店では毎月、季節に合った草花を使って小物などを作るお花の教室を行っています。
+                            色々な告知や、教室の雰囲気、イベントレポートなどは随時ブログにて！
+                            ぜひ、お店に遊びに来てくださいね。</dd>
+                            <p class="button">
+                                <a href="#">お店のブログはこちら</a>
+                            </p>
+                    </dl>
                 </div>
-            </div>
-            <div class="season-greeting">
-                <div class="season-greeting-text">
-                    <p>一緒に、お花を楽しみませんか？</p>
-                    <p>7月はお子様の自由研究にもぴったりな「夏のお花を使った押し花作り」を予定しております。
-                        お花教室のお申し込みはこちらから、メールにてお願いします。</p>
+                <div class="season-greeting">
+                    <dl class="season-greeting-text">
+                        <dt>一緒に、お花を楽しみませんか？</dt>
+                        <dd>7月はお子様の自由研究にもぴったりな「夏のお花を使った押し花作り」を予定しております。<br>
+                            お花教室のお申し込みは<a href="#">こちら</a>から、メールにてお願いします。</dd>
+                    </dl>
+                    <img src="img/hana.png" alt="">
                 </div>
-                <img src="img/hana.png" alt="">
-            </div>
+                </div>
         </section>
         <div class="bg-img">
             <img src="img/bg_img03.jpg" alt="">
@@ -125,21 +129,26 @@
             </div>
             <dl>
                 <dt>店名</dt>
-                <dl>sunday flower</dl>
+                <dd>sunday flower</dd>
                 <dt>営業時間</dt>
-                <dl>10時～18時半</dl>
+                <dd>10時～18時半</dd>
                 <dt>定休日</dt>
-                <dl>年末年始及びお盆明け</dl>
+                <dd>年末年始及びお盆明け</dd>
                 <dt>住所</dt>
-                <dl>〒160-0005 <br>
-                    東京都新宿区愛住町22 <br>
-                    第三山田ビル2F <br>
-                    <span class="access-button">Google Maps</span>
-                </dl>
+                <dd>〒160-0005 <br>
+                    東京都新宿区愛住町22 第三山田ビル2F <br>
+                    <div class="access-button">
+                        <a href="https://maps.app.goo.gl/kbihX3uLgeVSZzoQ6" class="access-button">
+                            Google Maps
+                        </a>
+                    </div>
+                </dd>
                 <dt>電話</dt>
-                <dl>03-1234-5678</dl>
+                <dd>03-1234-5678</dd>
             </dl>
-            <div class="inquiry">お問い合わせ</div>
+            <p class="button">
+                <a href="#">お問い合わせ</a>
+            </p>
             <div class="access-maparea"></div>
         </section>
         <div class="bg-img">
@@ -147,8 +156,17 @@
         </div>
     </main>
     <footer>
-        <img src="img/bottom_logo.png" alt="">
-        <small>&copy;sunday flower All Rights Reserved.</small>
+        <div class="footer">
+            <div class="footer-button">
+                <a href="#">
+                    <img src="img/to_top.png" alt="">
+                </a>
+            </div>
+            <div class="footer-img">
+                <img src="img/bottom_logo.png" alt="">
+            </div>
+            <small>&copy;sunday flower All Rights Reserved.</small>
+        </div>
     </footer>
 </body>
 </html>
