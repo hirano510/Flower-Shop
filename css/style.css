@@ -315,6 +315,7 @@ a:hover {
     line-height: 2.2;
 }
 
+
 /* フッター */
 .footer {
     padding: 50px 24px 8px;
@@ -377,14 +378,16 @@ a:hover {
         width: 65%;
     }
 
+        /* PC レイアウト （共通）*/
+        .pc-section {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            padding: 0 3%;
+            margin: 0 auto;
+        }
+
     /* PC　おしらせ */
-    .pc-list-items {
-        display: flex;
-        justify-content: space-between;
-        width: 90%;
-        padding: 0 3%;
-        margin: 0 auto;
-    }
     .news-list-item {
         width: 30%;
     }
@@ -394,13 +397,6 @@ a:hover {
     }
 
     /* PC 今月のお花教室 */
-    .pc-season {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10%;
-        margin: 0 auto;
-    }
     .season-flower {
         width: 40%;
         margin-bottom: 0;
@@ -412,4 +408,11 @@ a:hover {
     .season-greeting {
         width: 40%;
     }
+    .season-greeting img {
+        width: 70%;
+        margin: 200px auto 0;
+    }
+
+    /* PC 店舗情報 */
+
 }
