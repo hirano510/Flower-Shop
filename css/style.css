@@ -154,11 +154,28 @@ a:hover {
     border-bottom-right-radius: 50% 20px;
     overflow: hidden;
 }
+
 .main-view_bg-img01 {
     height: 80vh;
     width: auto;
     background: url(../img/bg_img01.jpg);
 }
+.main-view_bg-img02 {
+    height: 80vh;
+    width: auto;
+    background: url(../img/bg_img02.jpg);
+}
+.main-view_bg-img03 {
+    height: 80vh;
+    width: auto;
+    background: url(../img/bg_img03.jpg);
+}
+.main-view_bg-img04 {
+    height: 80vh;
+    width: auto;
+    background: url(../img/bg_img04.jpg);
+}
+
 .main-view_text {
     display: flex;
     position: absolute;
