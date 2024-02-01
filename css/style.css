@@ -192,7 +192,9 @@ a:hover {
     display: flex;
     position: absolute;
     top: 40%;
-    left: 10px;
+    padding: 8px 16px 8px 32px;
+    background-color: rgba(249, 170, 143, 0.8);
+
 }
 .main-view_text p {
     display: flex;
@@ -200,6 +202,7 @@ a:hover {
     font-size: 1.1rem;
     text-decoration: none;
     justify-content: center;
+    text-shadow: #aaa 0 0 5px;
 }
 
 /* スクロール矢印 */
@@ -331,6 +334,9 @@ a:hover {
     border-bottom: 1px dotted #91bc6f;
     margin-bottom: 8px;
 }
+.access-maparea {
+    display: none;
+}
 .access-button {
     display: block;
     width: 150px;
@@ -445,5 +451,16 @@ a:hover {
     }
 
     /* PC 店舗情報 */
+    .access-map {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .access dl {
+        width: 45%;
+    }
+    .access-maparea {
+        display: block;
+    }
 
 }
