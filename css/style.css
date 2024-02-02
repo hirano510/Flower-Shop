@@ -1,11 +1,12 @@
 @charset 'utf-8';
 
-/* 共通設定 */
+/* ↓共通設定 ↓*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Shippori Mincho", serif;
     font-weight: 400;
@@ -34,6 +35,7 @@ img {
     height: 5px;
     background: linear-gradient(45deg, #91bc6f, #f9aa8f);
 }
+
 /* リンクスタイル (共通)*/
 a {
     color: #f9aa8f;
@@ -42,7 +44,8 @@ a {
 a:hover {
     color: #91bc6f;
 }
-/* ボタン（共通） */
+
+/* ボタンスタイル（共通） */
 .button a {
     display: block;
     text-decoration: none;
@@ -55,7 +58,11 @@ a:hover {
     border-radius: 10px;
     margin: 40px auto;
 }
-/* バックグラウンドイメージ（共通） */
+.button a:hover {
+    background-color: #91bc6f;
+}
+
+/* 中間背景（共通） */
 .bg-img {
     height: 55vh;
     clip-path: inset(0);
@@ -69,6 +76,8 @@ a:hover {
     object-fit: cover;
     object-position: center center;
 }
+/* ↑共通設定↑ */
+
 
 
 /* ハンバーガーメニュー */
@@ -102,7 +111,8 @@ a:hover {
 .gnav-toggle span::before {
     top: calc(50% - 14px);
 }
-/* ハンバーガーメニュー開閉 */
+
+/* ハンバーガーメニューの開閉 */
 .gnav-checkbox:checked ~ .gnav-toggle span {
     background-color: transparent;
 }
@@ -158,7 +168,9 @@ a:hover {
     height: 5px;
     background: linear-gradient(45deg, #91bc6f, #f9aa8f);
 }
-/* メインビュー */
+
+/* ↓メインビュー↓ */
+/* メインビュー（スライドショー） */
 .main-view_bg {
     height: 80vh;
     width: 100%;
@@ -166,7 +178,6 @@ a:hover {
     border-bottom-right-radius: 50% 20px;
     overflow: hidden;
 }
-
 .main-view_bg-img01 {
     height: 80vh;
     width: auto;
@@ -188,6 +199,7 @@ a:hover {
     background: url(../img/bg_img04.jpg);
 }
 
+/* メインビュー（ロゴ・テキスト） */
 .main-view_text {
     display: flex;
     position: absolute;
@@ -246,9 +258,9 @@ a:hover {
     50% {transform: rotate(90deg) translateX(15px);}
     100% {transform: rotate(90deg) translateX(0);}
 }
+/* ↑メインビュー↑ */
 
-
-/* イントロダクション */
+/* ↓イントロダクション↓ */
 .about {
     margin: 100px 24px 50px;
 }
@@ -269,8 +281,9 @@ a:hover {
     margin-right: 0;
     margin-left: auto;
 }
+/* ↑イントロダクション↑ */
 
-/* おしらせ */
+/* ↓おしらせ↓ */
 .news {
     margin: 100px 24px 50px;
 }
@@ -292,8 +305,9 @@ a:hover {
 .news-foot img {
     width: 50%;
 }
+/* ↑おしらせ↑ */
 
-/* 今月のお花教室 */
+/* ↓今月のお花教室↓ */
 .season {
     padding: 100px 24px 50px;
 }
@@ -321,8 +335,9 @@ a:hover {
 .season-greeting img {
     width: 100%;
 }
+/* ↑今日のお花教室↑ */
 
-/* 店舗情報 */
+/* ↓店舗情報↓ */
 .access {
     padding: 100px 24px 50px;
 }
@@ -349,9 +364,10 @@ a:hover {
     color: #f9aa8f;
     line-height: 2.2;
 }
+/* ↑店舗情報↑ */
 
 
-/* フッター */
+/* ↓フッター↓ */
 .footer {
     padding: 50px 24px 8px;
 }
@@ -368,7 +384,9 @@ a:hover {
     font-size: 1rem;
     text-align: center;
 }
+/* ↑フッター↑ */
 
+/* ↓PCスタイル↓ */
 @media screen and (min-width:600px) {
     /* PC　ハンバーガーメニュー */
     .gnav-toggle {
@@ -415,7 +433,7 @@ a:hover {
         width: 65%;
     }
 
-        /* PC レイアウト （共通）*/
+        /* PC セクションレイアウト （共通）*/
         .pc-section {
             display: flex;
             justify-content: space-between;
@@ -464,3 +482,4 @@ a:hover {
     }
 
 }
+/* ↑PCスタイル↑ */
